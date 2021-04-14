@@ -1,4 +1,4 @@
-#Cash Register App (Coin-Problem, Minimum # of Coins on limited resources)
+## Cash Register App (Coin-Problem, Minimum # of Coins on limited resources)
 
 A cash register application in Java consisting of 
 classes, and interfaces  (for maintainability purposes)
