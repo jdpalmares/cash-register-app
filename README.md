@@ -14,4 +14,4 @@ NOTE: Time complexity is added a bit due to addition of two algorithms but
 also adheres to need for best case scenarios and more optimal choice of values.
 (Also to at least teach on how to implement both algorithms)
 
-v1.0.0
+v1.0.1

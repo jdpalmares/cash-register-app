@@ -1,8 +1,8 @@
-package com.cashreg;
+
 
 import java.util.Scanner;
 
-import com.cashreg.impl.CashRegisterImpl;
+import impl.CashRegisterImpl;
 
 public class App {
    public static void main(String[] args) {

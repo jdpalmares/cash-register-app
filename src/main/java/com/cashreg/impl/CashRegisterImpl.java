@@ -1,8 +1,9 @@
-package com.cashreg.impl;
+package impl;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import com.cashreg.interfaces.CashRegister;
+
+import interfaces.CashRegister;
 
 public class CashRegisterImpl implements CashRegister {
     //Use an Arraylist to track the contents of the Cash register
@@ -188,7 +189,7 @@ public class CashRegisterImpl implements CashRegister {
                                             coinsUsed[i][j] = coinsUsed[i-1][j];
                                         }
                                     } else {
-                                        coinsUsed[i][j] = 0;
+                                        coinsUsed[i][j] = coinsUsed[i - 1][j];
                                     }
                                 }
                             } else {
@@ -198,6 +199,8 @@ public class CashRegisterImpl implements CashRegister {
                                     int tempSubTotal = coinsUsed[i][j] * tempDenoms[i];
                                     if(tempSubTotal < j && coinsUsed[i-1][j] > 0){
                                         coinsUsed[i][j] = coinsUsed[i-1][j];
+                                    } else if (coinsUsed[i][j - tempDenoms[i]] == 0 && j - tempDenoms[i] != 0) {
+                                        coinsUsed[i][j] = 0;
                                     }
                                 } else {
                                     coinsUsed[i][j] = 0;

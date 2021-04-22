@@ -1,4 +1,4 @@
-package com.cashreg.interfaces;
+package interfaces;
 
 public interface CashRegister {
    public void showCashRegState();
